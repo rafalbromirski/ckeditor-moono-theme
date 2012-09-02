@@ -94,12 +94,36 @@ The visual representation of a rich combo widget looks as follows:
 
 /* Different states of the container. */
 a.cke_combo_button:hover,
-a.cke_combo_button:focus,
-a.cke_combo_button:active
+a.cke_combo_button:focus
 {
-	background: #DFF1FF;
 	outline: none;
+
+    background: #4c4c4c;
+    background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#4c4c4c)); /* Chrome,Safari4+ */
+   	background: -moz-linear-gradient(top, #666, #4c4c4c); /* FF3.6+ */
+   	background: -webkit-linear-gradient(top, #666, #4c4c4c); /* Chrome10+,Safari5.1+ */
+   	background: -o-linear-gradient(top, #666, #4c4c4c); /* Opera 11.10+ */
+   	background: -ms-linear-gradient(top, #666, #4c4c4c); /* IE10+ */
+   	background: linear-gradient(top, #666, #4c4c4c); /* W3C */
 }
+
+a.cke_combo_button:active,
+.cke_combo.cke_on a.cke_combo_button
+{
+    background: #4c4c4c;
+    background: -webkit-gradient(linear, left top, left bottom, from(#262626), to(#1a1a1a)); /* Chrome,Safari4+ */
+   	background: -moz-linear-gradient(top, #262626, #1a1a1a); /* FF3.6+ */
+   	background: -webkit-linear-gradient(top, #262626, #1a1a1a); /* Chrome10+,Safari5.1+ */
+   	background: -o-linear-gradient(top, #262626, #1a1a1a); /* Opera 11.10+ */
+   	background: -ms-linear-gradient(top, #262626, #1a1a1a); /* IE10+ */
+   	background: linear-gradient(top, #262626, #1a1a1a); /* W3C */
+
+    -webkit-box-shadow: 0 0 8px rgba(0,0,0,.75) inset;
+    -moz-box-shadow: 0 0 8px rgba(0,0,0,.75) inset;
+    box-shadow: 0 0 8px rgba(0,0,0,.75) inset;
+}
+
+
 
 .cke_rtl .cke_combo_button
 {

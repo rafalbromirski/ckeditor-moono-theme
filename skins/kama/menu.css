@@ -77,10 +77,8 @@ Special outer level classes used in this file:
 /* The menu item icon. */
 .cke_menubutton_icon
 {
-	background-color: #D3D3D3;
-	border: solid 4px #D3D3D3;
-	opacity: 0.70; /* Safari, Opera and Mozilla */
-	filter: alpha(opacity=70); /* IE */
+	background-color: #393939;
+	border: solid 4px #393939;
 	width: 16px;
 	height: 16px;
 	float: left;
@@ -151,10 +149,10 @@ Special outer level classes used in this file:
 /* The separator used to separate menu item groups. */
 .cke_menuseparator
 {
-	background-color: #D3D3D3;
-	height: 2px;
-	filter: alpha(opacity=70); /* IE */
-	opacity: 0.70; /* Safari, Opera and Mozilla */
+	background-color: #d9d9d9;
+	height: 1px;
+	/*filter: alpha(opacity=70);  IE*/
+	/*opacity: 0.70;  Safari, Opera and Mozilla*/
 }
 
 /* The small arrow shown for item with sub-menus. */
