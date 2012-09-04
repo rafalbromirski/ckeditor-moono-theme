@@ -99,6 +99,20 @@ Special outer level classes used in this file:
    	border-radius: 0 2px 2px 0;
 }
 
+.cke_rtl .cke_toolgroup *:first-child
+{
+    -webkit-border-radius: 0 2px 2px 0;
+    -moz-border-radius: 0 2px 2px 0;
+   	border-radius: 0 2px 2px 0;
+}
+
+.cke_rtl .cke_toolgroup *:last-child
+{
+    -webkit-border-radius: 2px 0 0 2px;
+    -moz-border-radius: 2px 0 0 2px;
+   	border-radius: 2px 0 0 2px;
+}
+
 .cke_hc .cke_toolgroup
 {
 	padding-right: 0;
@@ -291,14 +305,15 @@ a.cke_button_off:active
 {
 	/* Arrow in CSS */
 	display: inline-block;
-	margin: 7px 0 0 1px;
+	margin: 8px 0 0 1px;
 	width: 0;
 	height: 0;
-	border-width: 3px;
-	border-color: #2f2f2f transparent transparent transparent;
-	border-style: solid dashed dashed dashed;
-	cursor: default;
-	vertical-align: middle;
+    cursor: default;
+   	vertical-align: middle;
+    border-left: 3px solid transparent;
+   	border-right: 3px solid transparent;
+   	border-top: 3px solid #e6e6e6;
+
 }
 
 .cke_rtl .cke_button_arrow
@@ -339,9 +354,14 @@ a.cke_button_off:active
 
 .cke_rtl .cke_toolbar_separator
 {
-	border-right: solid 1px #D3D3D3;
+    border-right: 1px solid #272727;
+    border-right-color: rgba(0,0,0,.5);
 	border-left: 0;
 	float: right;
+
+    -webkit-box-shadow: -1px 0 0 rgba(255,255,255,.1);
+    -moz-box-shadow: -1px 0 0 rgba(255,255,255,.1);
+    box-shadow: -1px 0 0 rgba(255,255,255,.1);
 }
 
 .cke_hc .cke_toolbar_separator
@@ -374,11 +394,30 @@ a.cke_button_off:active
 	width: 12px;
 	height: 11px;
 	float: right;
-	border: 1px outset #d3d3d3;
 	margin: 11px 0 0;
 	font-size: 0;
 	cursor: default;
 	text-align: center;
+
+    border: 1px solid #070707;
+    border-bottom-color: #060606;
+
+	/*background: url(images/sprites.png) repeat-x 0 -500px;*/
+	background: -webkit-gradient(linear, left top, left bottom, from(#595959), to(#404040)); /* Chrome,Safari4+ */
+	background: -moz-linear-gradient(top, #595959, #404040); /* FF3.6+ */
+	background: -webkit-linear-gradient(top, #595959, #404040); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #595959, #404040); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #595959, #404040); /* IE10+ */
+	background: linear-gradient(top, #595959, #404040); /* W3C */
+
+   	-webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+   	border-radius: 3px;
+
+    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 2px rgba(255,255,255,.15) inset, 0 1px 0 rgba(255,255,255,.15) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 2px rgba(255,255,255,.15) inset, 0 1px 0 rgba(255,255,255,.15) inset;
+    box-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 2px rgba(255,255,255,.15) inset, 0 1px 0 rgba(255,255,255,.15) inset;
+
 }
 
 .cke_toolbox_collapser.cke_toolbox_collapser_min
@@ -405,15 +444,16 @@ a.cke_button_off:active
 	height: 0;
 	width: 0;
 	font-size: 0;
-	border-width: 3px;
-	border-style: solid;
-	border-color: transparent transparent #2f2f2f;
+    margin-top: 4px;
+    border-left: 3px solid transparent;
+   	border-right: 3px solid transparent;
+   	border-bottom: 3px solid #e5e5e5;
 }
 
 .cke_toolbox_collapser.cke_toolbox_collapser_min .cke_arrow
 {
-	margin: 4px 2px 0 0;
-	border-color: #2f2f2f transparent transparent;
+	/*margin: 4px 2px 0 0;*/
+	border-color: #e5e5e5 transparent transparent;
 }
 
 .cke_hc .cke_toolbox_collapser .cke_arrow

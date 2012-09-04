@@ -165,6 +165,8 @@ a.cke_combo_button:active,
 {
 	float: right;
 	text-align: right;
+    padding-left: 0;
+    padding-right: 10px;
 }
 
 /* The label of the combo whose value hasn't been changed (it's default).
@@ -189,9 +191,10 @@ a.cke_combo_button:hover .cke_combo_inlinelabel
     font-size: 0;
     height: 19px;
     line-height: 17px;
-    margin: 1px 7px 1px 3px;
+    margin: 1px 7px 1px;
     width: 5px;
 }
+
 
 /* The arrow which is displayed inside of the .cke_combo_open handler. */
 .cke_combo_arrow

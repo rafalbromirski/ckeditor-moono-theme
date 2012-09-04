@@ -51,12 +51,17 @@ Comments in this file will give more details about each of the above blocks.
 .cke_dialog_body
 {
 	z-index: 1;
-	border: solid 1px #ddd;
-	padding: 5px;
-	background-color: #fff;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
+    background: #e5e5e5;
+    border: 1px solid #d9d9d9;
+    border-bottom-color: #ccc;
+
+   	-moz-border-radius: 3px;
+   	-webkit-border-radius: 3px;
+   	border-radius: 3px;
+
+    -moz-box-shadow: 0 0 3px rgba(0,0,0,.15);
+    -webkit-box-shadow: 0 0 3px rgba(0,0,0,.15);
+    box-shadow: 0 0 3px rgba(0,0,0,.15);
 }
 
 /* Due to our reset we have to recover the styles of some elements. */
@@ -69,29 +74,42 @@ Comments in this file will give more details about each of the above blocks.
 .cke_dialog_title
 {
 	font-weight: bold;
-	font-size: 14px;
-	padding: 3px 3px 8px;
+	font-size: 13px;
 	cursor: move;
 	position: relative;
-	border-bottom: 1px solid #eee;
+
+    color: #f2f2f2;
+    text-shadow: 0 1px 0 #000;
+
+    border: 1px solid #0d0d0d;
+    padding: 6px 10px;
+
+	background: #1f1f1f;
+	background: -webkit-gradient(linear, left top, left bottom, from(#4c4c4c), to(#262626)); /* Chrome,Safari4+ */
+	background: -moz-linear-gradient(top, #4c4c4c, #262626); /* FF3.6+ */
+	background: -webkit-linear-gradient(top, #4c4c4c, #262626); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #4c4c4c, #262626); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #4c4c4c, #262626); /* IE10+ */
+	background: linear-gradient(top, #4c4c4c, #262626); /* W3C */
+
+    -moz-border-radius: 2px 2px 0 0;
+   	-webkit-border-radius: 2px 2px 0 0;
+   	border-radius: 2px 2px 0 0;
+
+    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.15) inset, 0 1px 0 #fff;
+    -moz-box-shadow: 0 1px 0 rgba(255,255,255,.15) inset, 0 1px 0 #fff;
+    box-shadow: 0 1px 0 rgba(255,255,255,.15) inset, 0 1px 0 #fff;
 }
 
 /* The outer part of the dialog contants, which contains the contents body
    and the footer. */
 .cke_dialog_contents
 {
-	background-color: #ebebeb;
-	border: solid 1px #fff;
-	border-bottom: none;
+	background-color: #fff;
 	overflow: auto;
-	padding: 17px 10px 5px 10px;
-	-moz-border-radius-topleft: 5px;
-	-moz-border-radius-topright: 5px;
-	-webkit-border-top-left-radius: 5px;
-	-webkit-border-top-right-radius: 5px;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
-	margin-top: 22px;
+	padding: 15px 10px 5px 10px;
+    margin-top: 30px;
+   border-top: 1px solid #ccc;
 }
 
 /* The contents body part, which will hold all elements available in the dialog. */
@@ -107,15 +125,25 @@ Comments in this file will give more details about each of the above blocks.
 .cke_dialog_footer
 {
 	text-align: right;
-	background-color: #ebebeb;
-	border: solid 1px #fff;
-	border-bottom: none;
-	-moz-border-radius-bottomleft: 5px;
-	-moz-border-radius-bottomright: 5px;
-	-webkit-border-bottom-left-radius: 5px;
-	-webkit-border-bottom-right-radius: 5px;
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
+
+    border: none;
+    border-top: 1px solid #ccc;
+
+    background: #d4d4d4;
+   	background: -webkit-gradient(linear, left top, left bottom, from(#e5e5e5), to(#d4d4d4)); /* Chrome,Safari4+ */
+   	background: -moz-linear-gradient(top, #e5e5e5, #d4d4d4); /* FF3.6+ */
+   	background: -webkit-linear-gradient(top, #e5e5e5, #d4d4d4); /* Chrome10+,Safari5.1+ */
+   	background: -o-linear-gradient(top, #e5e5e5, #d4d4d4); /* Opera 11.10+ */
+   	background: -ms-linear-gradient(top, #e5e5e5, #d4d4d4); /* IE10+ */
+   	background: linear-gradient(top, #e5e5e5, #d4d4d4); /* W3C */
+
+    -moz-box-shadow: 0 1px 0 rgba(255,255,255,.5) inset;
+    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.5) inset;
+    box-shadow: 0 1px 0 rgba(255,255,255,.5) inset;
+
+    -moz-border-radius: 0 0 2px 2px;
+   	-webkit-border-radius: 0 0 2px 2px;
+   	border-radius: 0 0 2px 2px;
 }
 
 .cke_rtl .cke_dialog_footer
@@ -177,13 +205,12 @@ The .cke_dialog_tab_selected class is appended to the active tab.
 /* The main tabs container. */
 .cke_dialog_tabs
 {
-	height: 23px;
+	height: 24px;
 	display: inline-block;
-	margin-left:10px;
-	margin-right:10px;
-	margin-top: 11px;
+    margin: 5px 0 0;
 	position: absolute;
 	z-index: 2;
+    left: 10px;
 }
 
 .cke_rtl .cke_dialog_tabs
@@ -194,21 +221,43 @@ The .cke_dialog_tab_selected class is appended to the active tab.
 /* A single tab (an <a> element). */
 a.cke_dialog_tab
 {
-	background-image: url(images/sprites.png);
-	background-repeat: repeat-x;
-	background-position: 0 -1323px;
+	/*background-image: url(images/sprites.png);*/
+	/*background-repeat: repeat-x;*/
+	/*background-position: 0 -1323px;*/
 
-	background-color: #ebebeb;
-	height: 14px;
+	height: 16px;
 	padding: 4px 8px;
+    margin-right: 3px;
 	display: inline-block;
 	cursor: pointer;
+    line-height: 16px;
+    outline: none;
+    color: #595959;
 
+    border: 1px solid #ccc;
+
+    background: #d4d4d4;
+   	background: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#ededed)); /* Chrome,Safari4+ */
+   	background: -moz-linear-gradient(top, #fafafa, #ededed); /* FF3.6+ */
+   	background: -webkit-linear-gradient(top, #fafafa, #ededed); /* Chrome10+,Safari5.1+ */
+   	background: -o-linear-gradient(top, #fafafa, #ededed); /* Opera 11.10+ */
+   	background: -ms-linear-gradient(top, #fafafa, #ededed); /* IE10+ */
+   	background: linear-gradient(top, #fafafa, #ededed); /* W3C */
+
+    -moz-border-radius: 3px 3px 0 0;
+   	-webkit-border-radius: 3px 3px 0 0;
+   	border-radius: 3px 3px 0 0;
+}
+
+.cke_rtl a.cke_dialog_tab
+{
+    margin-right: 0;
+    margin-left: 3px;
 }
 
 a.cke_dialog_tab:hover
 {
-	background-color: #f1f1e3;
+
 }
 
 .cke_hc a.cke_dialog_tab:hover
@@ -219,7 +268,10 @@ a.cke_dialog_tab:hover
 
 a.cke_dialog_tab_selected
 {
-	background-position: 0 -1279px;
+	/*background-position: 0 -1279px;*/
+    background: #fff;
+    color: #383838;
+    border-bottom-color: #fff;
 	cursor: default;
 }
 
@@ -239,16 +291,16 @@ a.cke_dialog_tab_selected
 .cke_single_page .cke_dialog_contents
 {
 	padding-top: 5px;
-	margin-top: 10px;
+	margin-top: 0;
 }
 
 /* The close button at the top of the dialog. */
 
 .cke_dialog_close_button
 {
-	background-image: url(images/sprites.png);
+	background-image: url(images/_sprite_close.png);
 	background-repeat: no-repeat;
-	background-position: 0 -1022px;
+	background-position: 0 0;
 	position: absolute;
 	cursor: pointer;
 	text-align: center;
@@ -269,17 +321,17 @@ a.cke_dialog_tab_selected
 
 .cke_ltr .cke_dialog_close_button
 {
-	right: 10px;
+	right: 6px;
 }
 
 .cke_rtl .cke_dialog_close_button
 {
-	left: 10px;
+	left: 6px;
 }
 
 .cke_dialog_close_button
 {
-	top: 7px;
+	top: 6px;
 }
 
 /*
