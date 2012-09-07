@@ -94,8 +94,8 @@ Special outer level classes used in this file:
 .cke_menubutton:focus .cke_menubutton_icon,
 .cke_menubutton:active .cke_menubutton_icon
 {
-	background-color: #9d9d9d;
-	border: solid 4px #9d9d9d;
+	background-color: #444;
+	border: solid 4px #444;
 }
 
 .cke_menubutton_disabled:hover .cke_menubutton_icon,
@@ -121,10 +121,10 @@ Special outer level classes used in this file:
 
 .cke_rtl .cke_menubutton_label
 {
-	padding-right: 0;
-	margin-left: 0;
+	padding-right: 4px;
 	padding-left: 3px;
-	margin-right: 28px;
+	margin-left: 0;
+	margin-right: 24px;
 }
 
 .cke_menubutton_disabled .cke_menubutton_label
@@ -138,7 +138,12 @@ Special outer level classes used in this file:
 .cke_menubutton:focus .cke_menubutton_label,
 .cke_menubutton:active .cke_menubutton_label
 {
-	background-color: #D3D3D3;
+    border-color: #dedede;
+   	background-color: #f2f2f2;
+
+    -moz-box-shadow: 0 0 2px rgba(0,0,0,.1) inset;
+    -webkit-box-shadow: 0 0 2px rgba(0,0,0,.1) inset;
+    box-shadow: 0 0 2px rgba(0,0,0,.1) inset;
 }
 
 .cke_panel_frame .cke_menubutton_label
@@ -151,8 +156,6 @@ Special outer level classes used in this file:
 {
 	background-color: #d9d9d9;
 	height: 1px;
-	/*filter: alpha(opacity=70);  IE*/
-	/*opacity: 0.70;  Safari, Opera and Mozilla*/
 }
 
 /* The small arrow shown for item with sub-menus. */

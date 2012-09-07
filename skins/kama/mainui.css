@@ -52,8 +52,8 @@ Special outer level classes used in this file:
 	display: block;
 	border: 1px solid #d9d9d9;
     border-bottom-color: #ccc;
+    padding: 0;
 
-	/* Rounded borders. */
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
@@ -61,9 +61,6 @@ Special outer level classes used in this file:
     -moz-box-shadow: 0 0 3px rgba(0,0,0,.15);
     -webkit-box-shadow: 0 0 3px rgba(0,0,0,.15);
     box-shadow: 0 0 3px rgba(0,0,0,.15);
-
-	/* Spacing between the outer and the inner boundaries. */
-	padding: 0;
 }
 
 .cke_hc.cke_chrome
@@ -78,23 +75,12 @@ Special outer level classes used in this file:
 	/* This is <span>, so transform it into a block.*/
 	display: block;
 
-	/* Rounded borders. */
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
 	-webkit-touch-callout: none;
 	border-radius: 3px;
 
-	/* The white-to-color gradiend we see at the top of the editor. */
     background: #fff;
-	/*background: #d3d3d3 url(images/sprites.png) repeat-x 0 -1950px;*/
-	/*background: -webkit-gradient(linear, 0 -15, 0 40, from(#fff), to(#d3d3d3)); *//* Chrome,Safari4+ */
-	/*background: -moz-linear-gradient(top, #fff -15px, #d3d3d3 40px); *//* FF3.6+ */
-	/*background: -webkit-linear-gradient(top, #fff -15px, #d3d3d3 40px); *//* Chrome10+,Safari5.1+ */
-	/*background: -o-linear-gradient(top, #fff -15px, #d3d3d3 40px); *//* Opera 11.10+ */
-	/*background: -ms-linear-gradient(top, #fff -15px, #d3d3d3 40px); *//* IE10+ */
-	/*background: linear-gradient(top, #fff -15px, #d3d3d3 40px); *//* W3C */
-
-	/* Spacing with the inner blocks. */
 	padding: 0;
 }
 
@@ -103,7 +89,6 @@ Special outer level classes used in this file:
 .cke_float
 {
 	/* Make white the space between the outer and the inner borders. */
-	/*background: #fff;*/
     border: none;
 }
 
@@ -138,50 +123,53 @@ Special outer level classes used in this file:
     border: 1px solid #0d0d0d;
     padding: 6px 8px 2px;
 
-	background: #1f1f1f;
-	background: -webkit-gradient(linear, left top, left bottom, from(#333), to(#1f1f1f)); /* Chrome,Safari4+ */
-	background: -moz-linear-gradient(top, #333, #1f1f1f); /* FF3.6+ */
-	background: -webkit-linear-gradient(top, #333, #1f1f1f); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, #333, #1f1f1f); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, #333, #1f1f1f); /* IE10+ */
-	background: linear-gradient(top, #333, #1f1f1f); /* W3C */
-
-    -webkit-border-radius: 2px 2px 0 0;
     -moz-border-radius: 2px 2px 0 0;
+    -webkit-border-radius: 2px 2px 0 0;
     border-radius: 2px 2px 0 0;
 
-    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.15) inset;
     -moz-box-shadow: 0 1px 0 rgba(255,255,255,.15) inset;
+    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.15) inset;
     box-shadow: 0 1px 0 rgba(255,255,255,.15) inset;
+
+    background: #1f1f1f;
+   	background-image: -webkit-gradient(linear, left top, left bottom, from(#333), to(#1f1f1f));
+   	background-image: -moz-linear-gradient(top, #333, #1f1f1f);
+   	background-image: -webkit-linear-gradient(top, #333, #1f1f1f);
+   	background-image: -o-linear-gradient(top, #333, #1f1f1f);
+   	background-image: -ms-linear-gradient(top, #333, #1f1f1f);
+   	background-image: linear-gradient(top, #333, #1f1f1f);
+    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#ff333333', endColorstr='#ff1f1f1f');
 }
 
 .cke_float .cke_top
 {
-    -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
     border-radius: 2px;
 }
 
 .cke_bottom
 {
     border-top: 1px solid #ccc;
-    padding: 6px 8px;
+    padding: 4px 8px;
+    position: relative;
 
-	background: #d4d4d4;
-	background: -webkit-gradient(linear, left top, left bottom, from(#e5e5e5), to(#d4d4d4)); /* Chrome,Safari4+ */
-	background: -moz-linear-gradient(top, #e5e5e5, #d4d4d4); /* FF3.6+ */
-	background: -webkit-linear-gradient(top, #e5e5e5, #d4d4d4); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, #e5e5e5, #d4d4d4); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, #e5e5e5, #d4d4d4); /* IE10+ */
-	background: linear-gradient(top, #e5e5e5, #d4d4d4); /* W3C */
-
-    -webkit-border-radius: 0 0 2px 2px;
     -moz-border-radius: 0 0 2px 2px;
+    -webkit-border-radius: 0 0 2px 2px;
     border-radius: 0 0 2px 2px;
 
-    -webkit-box-shadow: 0 1px 0 #fff inset;
     -moz-box-shadow: 0 1px 0 0 #fff inset;
+    -webkit-box-shadow: 0 1px 0 #fff inset;
     box-shadow: 0 1px 0 0 #fff inset;
+
+    background: #d4d4d4;
+   	background-image: -webkit-gradient(linear, left top, left bottom, from(#e5e5e5), to(#d4d4d4));
+   	background-image: -moz-linear-gradient(top, #e5e5e5, #d4d4d4);
+   	background-image: -webkit-linear-gradient(top, #e5e5e5, #d4d4d4);
+   	background-image: -o-linear-gradient(top, #e5e5e5, #d4d4d4);
+   	background-image: -ms-linear-gradient(top, #e5e5e5, #d4d4d4);
+   	background-image: linear-gradient(top, #e5e5e5, #d4d4d4);
+    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#ffe5e5e5', endColorstr='#ffd4d4d4')
 }
 
 /* The resizer is the small UI element that is rendered at the bottom right
@@ -194,21 +182,20 @@ Special outer level classes used in this file:
 	height: 0;
 	overflow: hidden;
 	border-width: 12px 12px 0 12px;
-	border-color: transparent #EFEFEF transparent transparent;
+	border-color: transparent #e5e5e5 transparent transparent;
 	border-style: dashed solid dashed dashed;	/* dashed is for HC mode */
-
 	font-size: 0;
-
 	float: right;
 	vertical-align: bottom;
-
 	cursor: se-resize;
-	opacity: 0.8;
+
+    position: absolute;
 }
 
 .cke_resizer_ltr
 {
-	margin-left: -12px;
+    right: 3px;
+    bottom: 3px;
 }
 
 /* This class is added in RTL mode. This is a special case for the resizer
@@ -217,12 +204,11 @@ Special outer level classes used in this file:
    editor is inserted on. */
 .cke_resizer_rtl
 {
-	float: left;
-	border-color: transparent transparent transparent #EFEFEF;
+	border-color: transparent transparent transparent #e5e5e5;;
 	border-style: dashed dashed dashed solid;	/* dashed is for HC mode */
-	margin-right: -12px;
-
 	cursor: sw-resize;
+
+    left: 3px;
 }
 
 /* For now, we avoid showing the resizer on HC becuase it can't be rendered

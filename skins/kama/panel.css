@@ -73,10 +73,6 @@ panel contents and color panels check menu.css and colorpanel.css.
 /* This class represents panels which are used by rich combos. */
 .cke_combopanel
 {
-	/*border: 1px solid #8f8f73;*/
-	/*-moz-border-radius-topleft: 0;*/
-	/*-webkit-border-top-left-radius: 0;*/
-	/*border-top-left-radius: 0;*/
 	height: auto;
 }
 
@@ -86,8 +82,7 @@ panel contents and color panels check menu.css and colorpanel.css.
 	width: 100%;
 	height: 100%;
 
-	/* Font */
-	font-family: Arial, Verdana, sans-serif;
+	/*font-family: Arial, Verdana, sans-serif;*/
 	font-size: 12px;
 
 	overflow: auto;
@@ -135,14 +130,14 @@ is its visual representation:
 {
 	list-style-type: none;
 	margin: 3px;
-	padding: 0px;
+	padding: 0;
 	white-space: nowrap;
 }
 
 /* The item of .cke_panel_list */
 .cke_panel_listItem
 {
-	margin: 0px;
+	margin: 0;
     padding-bottom: 1px;
 }
 
@@ -158,8 +153,8 @@ is its visual representation:
 	overflow: hidden;
 	text-overflow: ellipsis;
 
-    -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
     border-radius: 2px;
 }
 
@@ -184,8 +179,8 @@ is its visual representation:
 	border: 1px solid #dedede;
 	background-color: #f2f2f2;
 
-    -webkit-box-shadow: 0 0 2px rgba(0,0,0,.1) inset;
     -moz-box-shadow: 0 0 2px rgba(0,0,0,.1) inset;
+    -webkit-box-shadow: 0 0 2px rgba(0,0,0,.1) inset;
     box-shadow: 0 0 2px rgba(0,0,0,.1) inset;
 }
 
@@ -196,8 +191,8 @@ is its visual representation:
 	border-color: #dedede;
 	background-color: #f2f2f2;
 
-    -webkit-box-shadow: 0 0 2px rgba(0,0,0,.1) inset;
     -moz-box-shadow: 0 0 2px rgba(0,0,0,.1) inset;
+    -webkit-box-shadow: 0 0 2px rgba(0,0,0,.1) inset;
     box-shadow: 0 0 2px rgba(0,0,0,.1) inset;
 }
 
@@ -225,21 +220,18 @@ is its visual representation:
     border: 1px solid #070707;
     border-bottom-color: #060606;
 
-	/*background: url(images/sprites.png) repeat-x 0 -500px;*/
-	background: -webkit-gradient(linear, left top, left bottom, from(#595959), to(#404040)); /* Chrome,Safari4+ */
-	background: -moz-linear-gradient(top, #595959, #404040); /* FF3.6+ */
-	background: -webkit-linear-gradient(top, #595959, #404040); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, #595959, #404040); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, #595959, #404040); /* IE10+ */
-	background: linear-gradient(top, #595959, #404040); /* W3C */
-
-   	/*-webkit-border-radius: 3px;*/
-    /*-moz-border-radius: 3px;*/
-   	/*border-radius: 3px;*/
-
-    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 2px rgba(255,255,255,.15) inset, 0 1px 0 rgba(255,255,255,.15) inset;
     -moz-box-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 2px rgba(255,255,255,.15) inset, 0 1px 0 rgba(255,255,255,.15) inset;
+    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 2px rgba(255,255,255,.15) inset, 0 1px 0 rgba(255,255,255,.15) inset;
     box-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 2px rgba(255,255,255,.15) inset, 0 1px 0 rgba(255,255,255,.15) inset;
+
+    background: #404040;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#595959), to(#404040));
+	background-image: -moz-linear-gradient(top, #595959, #404040);
+	background-image: -webkit-linear-gradient(top, #595959, #404040);
+	background-image: -o-linear-gradient(top, #595959, #404040);
+	background-image: -ms-linear-gradient(top, #595959, #404040);
+	background-image: linear-gradient(top, #595959, #404040);
+    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#ff595959', endColorstr='#ff404040');
 }
 
 /* The following styles set defaults of the elements used by the Paragraph
