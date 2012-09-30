@@ -31,7 +31,7 @@ For this skin, the following tasks are achieved in this file:
 // used on config.skin to tell the editor to use the skin.
 //
 // This is the only mandatory property to be defined in this file.
-CKEDITOR.skin.name = 'moono';
+CKEDITOR.skin.name = 'moono-light';
 
 // 2. Register browser specific skin files
 // -----------------------------------------
@@ -55,7 +55,7 @@ CKEDITOR.skin.name = 'moono';
 // The available browser specific files must be set separately for editor.css
 // and dialog.css.
 CKEDITOR.skin.ua_editor = 'ie,ie7,ie8';
-CKEDITOR.skin.ua_dialog = 'ie,ie7,ie8';
+CKEDITOR.skin.ua_dialog = 'ie,ie7,ie8,opera';
 
 // %REMOVE_START%
 
