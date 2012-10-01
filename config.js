@@ -5,6 +5,6 @@
 
 CKEDITOR.editorConfig = function( config ) {
 	// Just put the name of your custom skin here.
-	config.skin = 'moono-dark';
+	config.skin = 'moono-light';
 };
 
