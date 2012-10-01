@@ -224,9 +224,8 @@ a.cke_button_off:active
 
 a.cke_button_off:hover .cke_button_icon
 {
-    -moz-filter: brightness(10%);
+    /* http://caniuse.com/css-filters */
     -webkit-filter: brightness(10%);
-    filter: brightness(10%);
 }
 
 /* The label of the button that stores the name of the feature. By default,

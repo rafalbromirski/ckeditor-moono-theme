@@ -13,6 +13,12 @@ This file contains styles to used by Internet Explorer 7 only.
 /* Base it on dialog_ie.css, overriding it with styles defined in this file. */
 @import url("dialog_ie.css");
 
+.cke_dialog_title
+{
+    /* gradient fix */
+    zoom: 1;
+}
+
 .cke_dialog_footer
 {
     padding-top: 5px;

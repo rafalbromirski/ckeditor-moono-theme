@@ -111,6 +111,10 @@ Comments in this file will give more details about each of the above blocks.
     padding: 15px 10px 5px 10px;
     margin-top: 30px;
     border-top: 1px solid #ccc;
+
+    -moz-border-radius: 0 0 3px 3px;
+    -webkit-border-radius: 0 0 3px 3px;
+    border-radius: 0 0 3px 3px;
 }
 
 /* The contents body part, which will hold all elements available in the dialog. */
@@ -247,6 +251,7 @@ a.cke_dialog_tab_selected
     color: #383838;
     border-bottom-color: #fff;
     cursor: default;
+    filter: none;
 }
 
 /* The .cke_single_page class is appended to the dialog outer element in case
@@ -260,6 +265,7 @@ a.cke_dialog_tab_selected
 {
     padding-top: 5px;
     margin-top: 0;
+    border-top: none;
 }
 
 /* The close button at the top of the dialog. */
@@ -348,7 +354,7 @@ It is possible to have nested V/H-Boxes.
 
 .cke_dialog_ui_vbox_child
 {
-    padding: 5px 0px;
+    padding: 5px 0;
 }
 
 .cke_dialog_ui_hbox
@@ -464,18 +470,37 @@ textarea.cke_dialog_ui_input_textarea
 {
     overflow: auto;
     resize: none;
+}
 
+div.cke_dialog_ui_input_textarea
+{
+    /*background-color: white;*/
+    /*border: 1px solid #a0a0a0;*/
+    /*padding: 1px 0px;*/
+}
+
+/*
+Text Input & Textarea
+----------
+normal, :hover, :active
+*/
+
+
+input.cke_dialog_ui_input_text,
+input.cke_dialog_ui_input_password,
+textarea.cke_dialog_ui_input_textarea
+{
     background-color: #fff;
     border: 1px solid #c9cccf;
     border-top-color: #aeb3b9;
     padding: 4px 6px;
+    outline: none;
     width: 100%;
     *width: 95%;
 
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-
 
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
@@ -486,11 +511,24 @@ textarea.cke_dialog_ui_input_textarea
     box-shadow: 0 1px 2px rgba(0,0,0,.15) inset;
 }
 
-div.cke_dialog_ui_input_textarea
+input.cke_dialog_ui_input_text:hover,
+input.cke_dialog_ui_input_password:hover,
+textarea.cke_dialog_ui_input_textarea:hover
 {
-    /*background-color: white;*/
-    /*border: 1px solid #a0a0a0;*/
-    /*padding: 1px 0px;*/
+    border: 1px solid #aeb3b9;
+    border-top-color: #a0a6ad;
+}
+
+input.cke_dialog_ui_input_text:focus,
+input.cke_dialog_ui_input_password:focus,
+textarea.cke_dialog_ui_input_textarea:focus
+{
+    border: 1px solid #139ff7;
+    border-top-color: #1392e9;
+
+    -moz-box-shadow: 0 1px 0 rgba(0,0,0,.05) inset, 0 0 5px #009cff;
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,.05) inset, 0 0 5px #009cff;
+    box-shadow: 0 1px 0 rgba(0,0,0,.05) inset, 0 0 5px #009cff;
 }
 
 /*
@@ -516,16 +554,16 @@ a.cke_dialog_ui_button
     padding: 3px 12px;
     margin: 0;
 
-    color: #333;
     text-align: center;
+    color: #333;
     text-shadow: 0 1px 1px rgba(255, 255, 255, .75);
     vertical-align: middle;
     cursor: pointer;
     border: 1px solid #aaa;
 
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
 
     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 1px 0 rgba(255,255,255,.5);
     -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), 0 1px 0 rgba(255,255,255,.5);
@@ -700,7 +738,7 @@ Styles for other dialog element types.
 {
     float: right;
     background-position: 0 -32px;
-    background-image: url(images/mini.gif);
+    background-image: url(images/mini.png);
     width: 16px;
     height: 16px;
     background-repeat: no-repeat;
@@ -718,7 +756,7 @@ Styles for other dialog element types.
 {
     float: left;
     background-position: 0 0;
-    background-image: url(images/mini.gif);
+    background-image: url(images/mini.png);
     width: 16px;
     height: 16px;
     background-repeat: no-repeat;
@@ -740,7 +778,7 @@ Styles for other dialog element types.
 .cke_dialog a.cke_btn_unlocked
 {
     background-position: 0 -16px;
-    background-image: url(images/mini.gif);
+    background-image: url(images/mini.png);
 }
 
 .cke_dialog .cke_btn_over

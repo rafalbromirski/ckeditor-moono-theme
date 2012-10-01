@@ -51,7 +51,6 @@ a.cke_combo_button:hover .cke_combo_inlinelabel
 
 .cke_resizer
 {
-	filter: alpha(opacity = 80);
 }
 
 .cke_rtl div.cke_dialog_ui_input_text

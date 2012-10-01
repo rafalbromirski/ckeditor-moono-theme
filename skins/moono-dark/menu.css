@@ -63,8 +63,6 @@ Special outer level classes used in this file:
 .cke_menubutton:focus,
 .cke_menubutton:active
 {
-	background-color: #D3D3D3;
-	display:block;
 }
 
 /* The menu item icon. */
@@ -88,16 +86,20 @@ Special outer level classes used in this file:
 .cke_menubutton:active .cke_menubutton_icon
 {
 	background-color: #444;
-	border: solid 4px #444;
+	border: 4px solid #444;
 }
 
-.cke_menubutton_disabled:hover .cke_menubutton_icon,
-.cke_menubutton_disabled:focus .cke_menubutton_icon,
-.cke_menubutton_disabled:active .cke_menubutton_icon
+.cke_menubutton_disabled .cke_button_icon,
+.cke_menubutton_disabled .cke_menubutton_label
 {
-	/* The icon will get opacity as well when hovered. */
 	opacity: 0.3;
 	filter: alpha(opacity=30);
+}
+
+.cke_menubutton_disabled:hover .cke_menubutton_icon
+{
+    background-color: #444;
+   	border: 4px solid #444;
 }
 
 /* The textual part of each menu item. */

@@ -45,8 +45,6 @@ The visual representation of a rich combo widget looks as follows:
 	line-height: 26px;
 	vertical-align: top;
 	margin-right: 5px;
-	filter: alpha(opacity = 70); /* IE */
-	opacity: 0.7; /* Safari, Opera and Mozilla */
 }
 
 .cke_rtl .cke_combo_label
@@ -115,6 +113,13 @@ a.cke_combo_button:active,
     filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#ff262626', endColorstr='#ff1a1a1a');
 }
 
+a.cke_combo_button:active .cke_combo_text,
+.cke_combo.cke_on .cke_combo_text
+{
+    /*color: #fff;*/
+    /*text-shadow: 0 1px 0 rgba(0,0,0,.5);*/
+}
+
 
 .cke_rtl .cke_combo_button
 {
@@ -152,13 +157,6 @@ a.cke_combo_button:active,
    It displays the name of the property the combo is responsible for. */
 .cke_combo_inlinelabel
 {
-	/*font-style: italic;*/
-	/*opacity: 0.70;*/
-}
-
-a.cke_combo_button:hover .cke_combo_inlinelabel
-{
-	opacity: 1;
 }
 
 /* The handler which opens the panel of rich combo properties.
