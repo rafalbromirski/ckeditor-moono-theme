@@ -1,6 +1,6 @@
 #CKEditor Moono Theme
 
-Moono is a light and dark (work in progress) template for CKEditor 4.
+Moono is a light and dark (work in progress) template for CKEditor 4. More info about <a href="http://ckeditor.com/blog/ckeditor-4-skin-contest">skin contest</a>.
 
 ##Who did it?
 
