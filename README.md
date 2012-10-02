@@ -1,7 +1,7 @@
 #CKEditor Moono Theme
 
 Moono is a theme for CKEditor 4 that comes in two versions - dark or light.
-It was design and developed as a <a href="http://ckeditor.com/blog/ckeditor-4-skin-contest">CKEditor skin contest</a> entry.
+It was designed and developed as a <a href="http://ckeditor.com/blog/ckeditor-4-skin-contest">CKEditor skin contest</a> entry.
 
 ###Browsers support
 Chrome, Safari (including Mobile version - iPhone & iPad), Firefox, Opera, IE7+
