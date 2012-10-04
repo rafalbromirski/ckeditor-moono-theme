@@ -67,11 +67,20 @@ Special outer level classes used in this file:
 	display:block;
 }
 
+.cke_hc .cke_menubutton:hover,
+.cke_hc .cke_menubutton:focus,
+.cke_hc .cke_menubutton:active
+{
+	border: 2px solid;
+}
+
 /* The menu item icon. */
 .cke_menubutton_icon
 {
-	background-color: #393939;
-	border: solid 4px #393939;
+	background-color: #D3D3D3;
+	border: solid 4px #D3D3D3;
+	opacity: 0.70; /* Safari, Opera and Mozilla */
+	filter: alpha(opacity=70); /* IE */
 	width: 16px;
 	height: 16px;
 	float: left;
@@ -87,8 +96,8 @@ Special outer level classes used in this file:
 .cke_menubutton:focus .cke_menubutton_icon,
 .cke_menubutton:active .cke_menubutton_icon
 {
-	background-color: #444;
-	border: solid 4px #444;
+	background-color: #9d9d9d;
+	border: solid 4px #9d9d9d;
 }
 
 .cke_menubutton_disabled:hover .cke_menubutton_icon,
@@ -114,10 +123,10 @@ Special outer level classes used in this file:
 
 .cke_rtl .cke_menubutton_label
 {
-	padding-right: 4px;
-	padding-left: 3px;
+	padding-right: 0;
 	margin-left: 0;
-	margin-right: 24px;
+	padding-left: 3px;
+	margin-right: 28px;
 }
 
 .cke_menubutton_disabled .cke_menubutton_label
@@ -131,12 +140,7 @@ Special outer level classes used in this file:
 .cke_menubutton:focus .cke_menubutton_label,
 .cke_menubutton:active .cke_menubutton_label
 {
-    border-color: #dedede;
-   	background-color: #f2f2f2;
-
-    -moz-box-shadow: 0 0 2px rgba(0,0,0,.1) inset;
-    -webkit-box-shadow: 0 0 2px rgba(0,0,0,.1) inset;
-    box-shadow: 0 0 2px rgba(0,0,0,.1) inset;
+	background-color: #D3D3D3;
 }
 
 .cke_panel_frame .cke_menubutton_label
@@ -147,18 +151,21 @@ Special outer level classes used in this file:
 /* The separator used to separate menu item groups. */
 .cke_menuseparator
 {
-	background-color: #d9d9d9;
-	height: 1px;
+	background-color: #D3D3D3;
+	height: 2px;
+	filter: alpha(opacity=70); /* IE */
+	opacity: 0.70; /* Safari, Opera and Mozilla */
 }
 
 /* The small arrow shown for item with sub-menus. */
 .cke_menuarrow
 {
-	background-image: url(images/arrow.png);
-	background-position: 0 0;
+	/* arrowright.gif*/
+	background-image: url(images/sprites.png);
+	background-position: 0 -1411px;
 	background-repeat: no-repeat;
-	height: 6px;
-	width: 5px;
+	height: 5px;
+	width: 3px;
 	float: right;
 	margin-right: 2px;
 	margin-top: 3px;
@@ -169,10 +176,24 @@ Special outer level classes used in this file:
 	float: left;
 	margin-right: 0;
 	margin-left: 2px;
-	background-position: 0px -6px;
+	/* arrowleft.gif*/
+	background-image: url(images/sprites.png);
+	background-position: 0px -1390px;
+	background-repeat: no-repeat;
 }
 
 .cke_menuarrow span
 {
 	display: none;
+}
+
+.cke_hc .cke_menuarrow
+{
+	width: auto;
+	margin-top: 0;
+}
+
+.cke_hc .cke_menuarrow span
+{
+	display: inline;
 }
