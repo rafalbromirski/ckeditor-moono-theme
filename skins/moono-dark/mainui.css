@@ -165,18 +165,27 @@ Special outer level classes used in this file:
 {
 	/* To avoid using images for the resizer, we create a small triangle,
 	   using some CSS magic. */
-	width: 10px;
-	height: 10px;
-	overflow: hidden;
-    background: url(images/resizer.png) no-repeat 0 0 transparent;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border-width: 10px 10px 0 0;
+    border-color: transparent #A5A5A5 transparent transparent;
+    border-style: dashed solid dashed dashed;
 
-	font-size: 0;
-	float: right;
-	vertical-align: bottom;
-	cursor: se-resize;
+    font-size: 0;
+    float: right;
+    vertical-align: bottom;
+    cursor: se-resize;
 
     position: absolute;
-    bottom: 2px;
+    bottom: 3px;
+
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, .3);
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .3);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .3);
 }
 
 .cke_resizer_ltr

@@ -171,8 +171,9 @@ a.cke_button
 
 .cke_button_on .cke_button_icon
 {
+    /* experimental - only for one color icons! */
     /* http://caniuse.com/css-filters */
-    -webkit-filter: invert(100%) brightness(20%);
+    /*-webkit-filter: invert(100%) brightness(20%);*/
 }
 
 /* This class is applied to the button when the feature associated with the
