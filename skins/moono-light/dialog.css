@@ -53,7 +53,7 @@ Comments in this file will give more details about each of the above blocks.
     z-index: 1;
     background: #e5e5e5;
     border: 1px solid #b2b2b2;
-    border-bottom-color: #898989;
+    border-bottom-color: #999;
 
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
@@ -81,7 +81,7 @@ Comments in this file will give more details about each of the above blocks.
     color: #474747;
     text-shadow: 0 1px 0 rgba(255,255,255,.75);
 
-    border-bottom: 1px solid #898989;
+    border-bottom: 1px solid #999;
     padding: 6px 10px;
 
     -moz-border-radius: 2px 2px 0 0;
@@ -92,14 +92,14 @@ Comments in this file will give more details about each of the above blocks.
     -webkit-box-shadow: 0 1px 0 #fff inset;
     box-shadow: 0 1px 0 #fff inset;
 
-    background: #b7b8b7;
-   	background-image: -webkit-gradient(linear, left top, left bottom, from(#e8e8e8), to(#b7b8b7));
-   	background-image: -moz-linear-gradient(top, #e8e8e8, #b7b8b7);
-   	background-image: -webkit-linear-gradient(top, #e8e8e8, #b7b8b7);
-   	background-image: -o-linear-gradient(top, #e8e8e8, #b7b8b7);
-   	background-image: -ms-linear-gradient(top, #e8e8e8, #b7b8b7);
-   	background-image: linear-gradient(top, #e8e8e8, #b7b8b7);
-    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#ffe8e8e8', endColorstr='#ffb7b8b7');
+    background: #cfd1cf;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#cfd1cf));
+    background-image: -moz-linear-gradient(top, #f5f5f5, #cfd1cf);
+    background-image: -webkit-linear-gradient(top, #f5f5f5, #cfd1cf);
+    background-image: -o-linear-gradient(top, #f5f5f5, #cfd1cf);
+    background-image: -ms-linear-gradient(top, #f5f5f5, #cfd1cf);
+    background-image: linear-gradient(top, #f5f5f5, #cfd1cf);
+    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#fff5f5f5', endColorstr='#ffcfd1cf');
 }
 
 /* The outer part of the dialog contants, which contains the contents body
@@ -143,14 +143,14 @@ Comments in this file will give more details about each of the above blocks.
     -webkit-border-radius: 0 0 2px 2px;
     border-radius: 0 0 2px 2px;
 
-    background: #c5c7c5;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#ebebeb), to(#c5c7c5));
-    background-image: -moz-linear-gradient(top, #ebebeb, #c5c7c5);
-    background-image: -webkit-linear-gradient(top, #ebebeb, #c5c7c5);
-    background-image: -o-linear-gradient(top, #ebebeb, #c5c7c5);
-    background-image: -ms-linear-gradient(top, #ebebeb, #c5c7c5);
-    background-image: linear-gradient(top, #ebebeb, #c5c7c5);
-    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#ffebebeb', endColorstr='#ffc5c7c5');
+    background: #cfd1cf;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ebebeb), to(#cfd1cf));
+    background-image: -moz-linear-gradient(top, #ebebeb, #cfd1cf);
+    background-image: -webkit-linear-gradient(top, #ebebeb, #cfd1cf);
+    background-image: -o-linear-gradient(top, #ebebeb, #cfd1cf);
+    background-image: -ms-linear-gradient(top, #ebebeb, #cfd1cf);
+    background-image: linear-gradient(top, #ebebeb, #cfd1cf);
+    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#ffebebeb', endColorstr='#cfd1cf');
 }
 
 .cke_rtl .cke_dialog_footer
@@ -281,6 +281,7 @@ a.cke_dialog_tab_selected
     height: 20px;
     width: 20px;
     top: 5px;
+    z-index: 5;
 }
 
 .cke_dialog_close_button span
@@ -571,14 +572,14 @@ a.cke_dialog_ui_button
     -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.5), 0 0 2px rgba(255,255,255,.15) inset, 0 1px 0 rgba(255,255,255,.15) inset;
     box-shadow: 0 1px 0 rgba(255,255,255,.5), 0 0 2px rgba(255,255,255,.15) inset, 0 1px 0 rgba(255,255,255,.15) inset;
 
-    background: #e0e0e0;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#e0e0e0));
-   	background-image: -moz-linear-gradient(top, #ffffff, #e0e0e0);
-   	background-image: -webkit-linear-gradient(top, #ffffff, #e0e0e0);
-   	background-image: -o-linear-gradient(top, #ffffff, #e0e0e0);
-   	background-image: -ms-linear-gradient(top, #ffffff, #e0e0e0);
-   	background-image: linear-gradient(top, #ffffff, #e0e0e0);
-    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#ffffffff', endColorstr='#ffe0e0e0');
+    background: #e4e4e4;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#e4e4e4));
+   	background-image: -moz-linear-gradient(top, #ffffff, #e4e4e4);
+   	background-image: -webkit-linear-gradient(top, #ffffff, #e4e4e4);
+   	background-image: -o-linear-gradient(top, #ffffff, #e4e4e4);
+   	background-image: -ms-linear-gradient(top, #ffffff, #e4e4e4);
+   	background-image: linear-gradient(top, #ffffff, #e4e4e4);
+    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#ffffffff', endColorstr='#ffe4e4e4');
 
 }
 
