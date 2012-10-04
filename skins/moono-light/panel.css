@@ -51,8 +51,8 @@ panel contents and color panels check menu.css and colorpanel.css.
    	overflow: hidden;
 
 	background-color: #fff;
-    border: 1px solid #b2b2b2;
-    border-bottom-color: #898989;
+    border: 1px solid #b6b6b6;
+    border-bottom-color: #999;
 
    	-moz-border-radius: 3px;
    	-webkit-border-radius: 3px;
@@ -207,7 +207,7 @@ is its visual representation:
 
     color: #474747;
     text-shadow: 0 1px 0 rgba(255,255,255,.75);
-    border-bottom: 1px solid #898989;
+    border-bottom: 1px solid #b6b6b6;
 
     -moz-border-radius: 2px 2px 0 0;
     -webkit-border-radius: 2px 2px 0 0;
@@ -217,14 +217,14 @@ is its visual representation:
     -webkit-box-shadow: 0 1px 0 #fff inset;
     box-shadow: 0 1px 0 #fff inset;
 
-    background: #b7b8b7;
-   	background-image: -webkit-gradient(linear, left top, left bottom, from(#e8e8e8), to(#b7b8b7));
-   	background-image: -moz-linear-gradient(top, #e8e8e8, #b7b8b7);
-   	background-image: -webkit-linear-gradient(top, #e8e8e8, #b7b8b7);
-   	background-image: -o-linear-gradient(top, #e8e8e8, #b7b8b7);
-   	background-image: -ms-linear-gradient(top, #e8e8e8, #b7b8b7);
-   	background-image: linear-gradient(top, #e8e8e8, #b7b8b7);
-    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#ffe8e8e8', endColorstr='#ffb7b8b7');
+    background: #cfd1cf;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#cfd1cf));
+    background-image: -moz-linear-gradient(top, #f5f5f5, #cfd1cf);
+    background-image: -webkit-linear-gradient(top, #f5f5f5, #cfd1cf);
+    background-image: -o-linear-gradient(top, #f5f5f5, #cfd1cf);
+    background-image: -ms-linear-gradient(top, #f5f5f5, #cfd1cf);
+    background-image: linear-gradient(top, #f5f5f5, #cfd1cf);
+    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#fff5f5f5', endColorstr='#ffcfd1cf');
 }
 
 /* The following styles set defaults of the elements used by the Paragraph

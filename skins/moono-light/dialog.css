@@ -561,8 +561,8 @@ a.cke_dialog_ui_button
     vertical-align: middle;
     cursor: pointer;
 
-    border: 1px solid #a6a6a6;
-    border-bottom-color: #979797;
+    border: 1px solid #b6b6b6;
+    border-bottom-color: #999;
 
     -moz-border-radius: 3px;
    	-webkit-border-radius: 3px;
