@@ -17,5 +17,5 @@ This file contains styles to used by all versions of Opera only.
 /* inset shadow is mis-aligned */
 .cke_dialog_footer
 {
-	display: block
+  display: block
 }

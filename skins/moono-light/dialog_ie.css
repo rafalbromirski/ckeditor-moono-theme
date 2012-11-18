@@ -17,16 +17,16 @@ This file contains styles to used by all versions of Internet Explorer only.
 .cke_rtl input.cke_dialog_ui_input_text,
 .cke_rtl input.cke_dialog_ui_input_password
 {
-	padding-right: 2px;
+  padding-right: 2px;
 }
 /* Compensate the padding added above on container. */
 .cke_rtl div.cke_dialog_ui_input_text,
 .cke_rtl div.cke_dialog_ui_input_password
 {
-	padding-left: 2px;
+  padding-left: 2px;
 }
 .cke_rtl div.cke_dialog_ui_input_text {
-	padding-right: 1px;
+  padding-right: 1px;
 }
 
 .cke_rtl .cke_dialog_ui_vbox_child,
@@ -34,5 +34,5 @@ This file contains styles to used by all versions of Internet Explorer only.
 .cke_rtl .cke_dialog_ui_hbox_first,
 .cke_rtl .cke_dialog_ui_hbox_last
 {
-	padding-right: 2px !important;
+  padding-right: 2px !important;
 }
