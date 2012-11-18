@@ -15,18 +15,18 @@ This file contains styles to used by Internet Explorer 7 only.
 
 .cke_dialog_title
 {
-    /* gradient fix */
-    zoom: 1;
+  /* gradient fix */
+  zoom: 1;
 }
 
 .cke_dialog_footer
 {
-    padding-top: 5px;
+  padding-top: 5px;
 }
+
 /* IE7 needs position static #6806 */
 .cke_dialog_footer_buttons
 {
-    /*position: static;*/
 }
 
 /* Predefined border to avoid visual size change impact. */
@@ -36,5 +36,5 @@ This file contains styles to used by Internet Explorer 7 only.
 .cke_btn_locked,
 .cke_btn_unlocked
 {
-	border: 1px solid transparent !important;
+  border: 1px solid transparent !important;
 }

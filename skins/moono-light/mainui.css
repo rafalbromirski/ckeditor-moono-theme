@@ -168,11 +168,11 @@ Special outer level classes used in this file:
    part of the editor. It makes is possible to resize the editor UI. */
 .cke_resizer
 {
-	/* To avoid using images for the resizer, we create a small triangle,
-	   using some CSS magic. */
-	width: 0;
-	height: 0;
-	overflow: hidden;
+    /* To avoid using images for the resizer, we create a small triangle,
+       using some CSS magic. */
+    width: 0;
+    height: 0;
+    overflow: hidden;
     width: 0;
     height: 0;
     overflow: hidden;
@@ -180,10 +180,10 @@ Special outer level classes used in this file:
     border-color: transparent #A5A5A5 transparent transparent;
     border-style: dashed solid dashed dashed;
 
-	font-size: 0;
-	float: right;
-	vertical-align: bottom;
-	cursor: se-resize;
+    font-size: 0;
+    float: right;
+    vertical-align: bottom;
+    cursor: se-resize;
 
     position: absolute;
     bottom: 3px;
