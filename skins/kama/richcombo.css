@@ -1,6 +1,6 @@
 /*
-Copyright (c) 2003-2012, CKSource - Frederico Knabben. All rights reserved.
-For licensing, see LICENSE.html or http://ckeditor.com/license
+Copyright (c) 2003-2014, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.md or http://ckeditor.com/license
 */
 
 /*
@@ -74,9 +74,9 @@ The visual representation of a rich combo widget looks as follows:
 }
 
 /* Different states of the container. */
-a.cke_combo_button:hover,
-a.cke_combo_button:focus,
-a.cke_combo_button:active
+.cke_combo_off .cke_combo_button:hover,
+.cke_combo_off .cke_combo_button:focus,
+.cke_combo_off .cke_combo_button:active
 {
 	background: #DFF1FF;
 	outline: none;
@@ -112,6 +112,7 @@ a.cke_combo_button:active
 	color: #666666;
 	float: left;
 	cursor: default;
+	width: 60px;
 }
 
 .cke_rtl .cke_combo_text
@@ -128,7 +129,9 @@ a.cke_combo_button:active
 	opacity: 0.70;
 }
 
-a.cke_combo_button:hover .cke_combo_inlinelabel
+.cke_combo_off .cke_combo_button:hover .cke_combo_inlinelabel,
+.cke_combo_off .cke_combo_button:active .cke_combo_inlinelabel,
+.cke_combo_off .cke_combo_button:focus .cke_combo_inlinelabel
 {
 	opacity: 1;
 }
@@ -169,3 +172,11 @@ a.cke_combo_button:hover .cke_combo_inlinelabel
 	border: 0;
 	margin-top: 4px;
 }
+
+/* Disabled combo button styles. */
+.cke_combo_disabled .cke_combo_inlinelabel,
+.cke_combo_disabled .cke_combo_open
+{
+	opacity: 0.3;
+}
+

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <!--
-Copyright (c) 2003-2012, CKSource - Frederico Knabben. All rights reserved.
-For licensing, see LICENSE.html or http://ckeditor.com/license
+Copyright (c) 2003-2014, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.md or http://ckeditor.com/license
 -->
 <html>
 <head>
-	<title>Massive inline editing &mdash; CKEditor Sample</title>
 	<meta charset="utf-8">
+	<title>Massive inline editing &mdash; CKEditor Sample</title>
 	<script src="../ckeditor.js"></script>
 	<script>
 
@@ -31,8 +31,8 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
 
 					// Remove unnecessary plugins to make the editor simpler.
 					editor.config.removePlugins = 'colorbutton,find,flash,font,' +
-						'forms,iframe,image,newpage,removeformat,scayt,' +
-						'smiley,specialchar,stylescombo,templates,wsc';
+						'forms,iframe,image,newpage,removeformat,' +
+						'smiley,specialchar,stylescombo,templates';
 
 					// Rearrange the layout of the toolbar.
 					editor.config.toolbarGroups = [
@@ -49,28 +49,6 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
 	<link href="sample.css" rel="stylesheet">
 	<style>
 
-		/* Style a bit the editable elements (mainly cursor) */
-		.cke_editable[contenteditable="true"]
-		{
-			outline: none !important;
-			*border: none !important;	/* IE7 */
-
-			padding: 10px;
-			outline: none !important;
-			cursor: pointer;
-		}
-
-		/* Once an editable element gets focused, the "cke_focus" class is
-		   added to it, so we can style it differently. */
-		.cke_editable.cke_focus
-		{
-			box-shadow: inset 0px 0px 20px 3px #ddd;
-			outline: 1px solid #ddd !important;
-			*border: 1px solid #ddd !important;	/* IE7 */
-			cursor: auto;
-			background: #eee;
-		}
-
 		/* The following styles are just to make the page look nice. */
 
 		/* Workaround to show Arial Black in Firefox. */
@@ -78,6 +56,11 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
 		{
 			font-family: 'arial-black';
 			src: local('Arial Black');
+		}
+
+		*[contenteditable="true"]
+		{
+			padding: 10px;
 		}
 
 		#container
@@ -120,14 +103,14 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
 		{
 			font-family: "Arial Black",arial-black;
 			font-size: 4.6em;
-			line-height: 1.1em;
+			line-height: 1.1;
 			text-transform: uppercase;
 		}
 
 		#headerLeft h3
 		{
 			font-size: 2.3em;
-			line-height: 1.1em;
+			line-height: 1.1;
 			margin: .2em 0 0;
 			color: #666;
 		}
@@ -140,11 +123,9 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
 
 		#headerRight p
 		{
-			font-size: 1.4em;
+			line-height: 1.8;
 			text-align: justify;
-			line-height: 1.8em;
 			margin: 0;
-			color: #666;
 		}
 
 		#headerRight p + p
@@ -152,10 +133,12 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
 			margin-top: 20px;
 		}
 
-		#headerRight div
+		#headerRight > div
 		{
 			padding: 20px;
 			margin: 0 0 0 30px;
+			font-size: 1.4em;
+			color: #666;
 		}
 
 		#columns
@@ -189,17 +172,7 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
 
 		#columns blockquote
 		{
-			position: relative;
-		}
-
-		#columns blockquote:before
-		{
-			content: "\201C";
-			font-size: 60px;
-			position: absolute;
-			left: -30px;
-			top: 10px;
-			color: #666;
+			margin-left: 15px;
 		}
 
 		#tagLine
@@ -273,7 +246,7 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
 					</p>
 				</blockquote>
 				<p>Pellentesque nunc. Donec suscipit erat. Pellentesque habitant morbi tristique ullamcorper.</p>
-				<p><strike>Mauris mattis feugiat lectus nec mauris. Nullam vitae ante.</strike></p>
+				<p><s>Mauris mattis feugiat lectus nec mauris. Nullam vitae ante.</s></p>
 			</div>
 		</div>
 		<div id="column2">
@@ -330,7 +303,7 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
 			http://ckeditor.com</a>
 	</p>
 	<p id="copy">
-		Copyright &copy; 2003-2012, <a class="samples" href="http://cksource.com/">CKSource</a>
+		Copyright &copy; 2003-2014, <a class="samples" href="http://cksource.com/">CKSource</a>
 		- Frederico Knabben. All rights reserved.
 	</p>
 </div>

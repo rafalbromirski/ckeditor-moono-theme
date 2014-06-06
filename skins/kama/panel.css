@@ -1,6 +1,6 @@
 /*
-Copyright (c) 2003-2012, CKSource - Frederico Knabben. All rights reserved.
-For licensing, see LICENSE.html or http://ckeditor.com/license
+Copyright (c) 2003-2014, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.md or http://ckeditor.com/license
 */
 
 /*
@@ -74,7 +74,8 @@ panel contents and color panels check menu.css and colorpanel.css.
 	-moz-border-radius-topleft: 0;
 	-webkit-border-top-left-radius: 0;
 	border-top-left-radius: 0;
-	height: auto;
+	width: 150px;
+    height: 170px;
 }
 
 /* The IFRAME the panel is wrapped into. */
@@ -118,8 +119,8 @@ is its visual representation:
 | | | +-- a --------------------+ | | |
 | | | | +-- span -------------+ | | | |
 | | | | |                     | | | | |
-| | | | +---------------------+ | | | | 
-| | | +-------------------------+ | | | 
+| | | | +---------------------+ | | | |
+| | | +-------------------------+ | | |
 | | +-----------------------------+ | |
 | | ...                             | |
 | +---------------------------------+ |

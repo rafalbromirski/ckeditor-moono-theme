@@ -1,3 +1,42 @@
-﻿CKEDITOR.plugins.setLang("docprops","gl",{bgColor:"Cor de Fondo",bgFixed:"Fondo Fixo",bgImage:"URL da Imaxe de Fondo",charset:"Codificación do Xogo de Caracteres",charsetASCII:"ASCII",charsetCE:"Central European",charsetCR:"Cyrillic",charsetCT:"Chinese Traditional (Big5)",charsetGR:"Greek",charsetJP:"Japanese",charsetKR:"Korean",charsetOther:"Outra Codificación do Xogo de Caracteres",charsetTR:"Turkish",charsetUN:"Unicode (UTF-8)",charsetWE:"Western European",chooseColor:"Choose",design:"Design",
-docTitle:"Título da Páxina",docType:"Encabezado do Tipo de Documento",docTypeOther:"Outro Encabezado do Tipo de Documento",label:"Propriedades do Documento",margin:"Marxes da Páxina",marginBottom:"Abaixo",marginLeft:"Esquerda",marginRight:"Dereita",marginTop:"Arriba",meta:"Meta Tags",metaAuthor:"Autor",metaCopyright:"Copyright",metaDescription:"Descripción do Documento",metaKeywords:"Palabras Chave de Indexación do Documento (separadas por comas)",other:"<outro>",previewHtml:'<p>This is some <strong>sample text</strong>. You are using <a href="javascript:void(0)">CKEditor</a>.</p>',
-title:"Propriedades do Documento",txtColor:"Cor do Texto",xhtmlDec:"Incluir Declaracións XHTML"});
+﻿/*
+Copyright (c) 2003-2014, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.md or http://ckeditor.com/license
+*/
+CKEDITOR.plugins.setLang( 'docprops', 'gl', {
+	bgColor: 'Cor do fondo',
+	bgFixed: 'Fondo fixo (non se despraza)',
+	bgImage: 'URL da imaxe do fondo',
+	charset: 'Codificación de caracteres',
+	charsetASCII: 'ASCII',
+	charsetCE: 'Centro europeo',
+	charsetCR: 'Cirílico',
+	charsetCT: 'Chinés tradicional (Big5)',
+	charsetGR: 'Grego',
+	charsetJP: 'Xaponés',
+	charsetKR: 'Coreano',
+	charsetOther: 'Outra codificación de caracteres',
+	charsetTR: 'Turco',
+	charsetUN: 'Unicode (UTF-8)',
+	charsetWE: 'Europeo occidental',
+	chooseColor: 'Escoller',
+	design: 'Deseño',
+	docTitle: 'Título da páxina',
+	docType: 'Cabeceira do tipo de documento',
+	docTypeOther: 'Outra cabeceira do tipo de documento',
+	label: 'Propiedades do documento',
+	margin: 'Marxes da páxina',
+	marginBottom: 'Abaixo',
+	marginLeft: 'Esquerda',
+	marginRight: 'Dereita',
+	marginTop: 'Arriba',
+	meta: 'Meta etiquetas',
+	metaAuthor: 'Autor',
+	metaCopyright: 'Dereito de autoría',
+	metaDescription: 'Descrición do documento',
+	metaKeywords: 'Palabras clave de indexación do documento (separadas por comas)',
+	other: 'Outro...',
+	previewHtml: '<p>Este é un <strong>texto de exemplo</strong>. Vostede esta a empregar o <a href="javascript:void(0)">CKEditor</a>.</p>',
+	title: 'Propiedades do documento',
+	txtColor: 'Cor do texto',
+	xhtmlDec: 'Incluír as declaracións XHTML'
+} );

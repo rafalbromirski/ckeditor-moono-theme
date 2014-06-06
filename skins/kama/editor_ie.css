@@ -1,6 +1,6 @@
 /*
-Copyright (c) 2003-2012, CKSource - Frederico Knabben. All rights reserved.
-For licensing, see LICENSE.html or http://ckeditor.com/license
+Copyright (c) 2003-2014, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.md or http://ckeditor.com/license
 */
 
 /*
@@ -45,9 +45,16 @@ This file contains styles to used by all versions of Internet Explorer only.
 	filter: alpha(opacity = 70);
 }
 
-a.cke_combo_button:hover .cke_combo_inlinelabel
+.cke_combo_button_off:hover .cke_combo_inlinelabel
 {
 	filter: alpha(opacity = 100);
+}
+
+/* Disabled combo button styles. */
+.cke_combo_button_disabled .cke_combo_inlinelabel,
+.cke_combo_button_disabled .cke_combo_open
+{
+	filter: alpha(opacity = 30);
 }
 
 .cke_toolbox_collapser
@@ -82,18 +89,6 @@ a.cke_path_item:active
 	font-size: 28px;
 }
 
-.cke_rtl div.cke_dialog_ui_input_text
-{
-	padding-left: 1px;
-}
-
-.cke_rtl input.cke_dialog_ui_input_text
-{
-	position: relative;
-	right: 1px;
-	padding-left: 1px;
-}
-
 /* #3766 In the context menu, long labels with second level menu get wrapped */
 .cke_menuarrow
 {
@@ -107,3 +102,9 @@ a.cke_path_item:active
 	left: 2px;
 }
 /* END #3766 */
+
+/* This guarantees the gap between the footer buttons in RTL under IE8 (#9359) */
+.cke_rtl .cke_dialog_footer_buttons .cke_dialog_ui_hbox_first
+{
+	padding-left: 10px !important;
+}

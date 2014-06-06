@@ -1,6 +1,6 @@
 /**
- * @license Copyright (c) 2003-2012, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.html or http://ckeditor.com/license
+ * @license Copyright (c) 2003-2014, CKSource - Frederico Knabben. All rights reserved.
+ * For licensing, see LICENSE.md or http://ckeditor.com/license
  */
 
 /*
@@ -47,7 +47,7 @@ CKEDITOR.skin.name = 'kama';
 // The accepted browser names must match the CKEDITOR.env properties. The most
 // common names are: ie, opera, webkit and gecko. Check the documentation for
 // the complete list:
-// http://docs.cksource.com/ckeditor_api/symbols/CKEDITOR.env.html
+// http://docs.ckeditor.com/#!/api/CKEDITOR.env
 //
 // Internet explorer is an expection and the browser version is also accepted
 // (ie7, ie8, ie9, ie10), as well as a special name for IE in Quirks mode (iequirks).
@@ -55,7 +55,7 @@ CKEDITOR.skin.name = 'kama';
 // The available browser specific files must be set separately for editor.css
 // and dialog.css.
 CKEDITOR.skin.ua_editor = 'ie,iequirks,ie7,ie8';
-CKEDITOR.skin.ua_dialog = 'ie,iequirks,ie7,ie8,opera';
+CKEDITOR.skin.ua_dialog = 'ie,iequirks,ie7,ie8';
 
 
 // 3. Define the "Chameleon" feature
@@ -233,7 +233,7 @@ CKEDITOR.skin.chameleon = function( editor, part ) {
 // used instead. This means that a skin is not required to provide all icons.
 // Actually, it is not required to provide icons at all.
 
-(function() {
+( function() {
 	// The available icons. This list must match the file names (without
 	// extension) available inside the "icons" folder.
 	var icons = ( 'about,anchor-rtl,anchor,bgcolor,bidiltr,bidirtl,blockquote,' +
@@ -243,7 +243,7 @@ CKEDITOR.skin.chameleon = function( editor, part ) {
 		'indent,italic,justifyblock,justifycenter,justifyleft,justifyright,' +
 		'link,maximize,newpage-rtl,newpage,numberedlist-rtl,numberedlist,' +
 		'outdent-rtl,outdent,pagebreak-rtl,pagebreak,paste-rtl,paste,' +
-		'pastefromword-rtl,pastefromword,pastetext-rtl,pastetext,preview-rtl,' +
+		'pastefromword-rtl,pastefromword,pastetext-rtl,pastetext,placeholder,preview-rtl,' +
 		'preview,print,radio,redo-rtl,redo,removeformat,replace,save,scayt,' +
 		'select-rtl,select,selectall,showblocks-rtl,showblocks,smiley,' +
 		'source-rtl,source,specialchar,spellchecker,strike,subscript,' +
@@ -253,9 +253,9 @@ CKEDITOR.skin.chameleon = function( editor, part ) {
 	var iconsFolder = CKEDITOR.getUrl( CKEDITOR.skin.path() + 'icons/' );
 
 	for ( var i = 0; i < icons.length; i++ ) {
-		CKEDITOR.skin.icons[ icons[ i ] ] = { path: iconsFolder + icons[ i ] + '.png', offset: 0 } ;
+		CKEDITOR.skin.addIcon( icons[ i ], iconsFolder + icons[ i ] + '.png' );
 	}
-})();
+} )();
 
 // %REMOVE_END%
 
