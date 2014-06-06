@@ -95,9 +95,9 @@ Special outer level classes used in this file:
 /* The menu item icon. */
 .cke_menubutton_icon
 {
-	background-color: #D7D8D7;
-	opacity: 0.70; /* Safari, Opera and Mozilla */
-	filter: alpha(opacity=70); /* IE */
+        background-color: #262626;
+	/* opacity: 0.70; /1* Safari, Opera and Mozilla *1/ */
+	/* filter: alpha(opacity=70); /1* IE *1/ */
 	padding: 4px;
 }
 
@@ -112,7 +112,7 @@ Special outer level classes used in this file:
 .cke_menubutton:focus .cke_menubutton_icon,
 .cke_menubutton:active .cke_menubutton_icon
 {
-	background-color: #D0D2D0;
+	background-color: #444;
 }
 
 .cke_menubutton_disabled:hover .cke_menubutton_icon,

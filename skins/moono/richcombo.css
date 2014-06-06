@@ -66,39 +66,39 @@ The visual representation of a rich combo widget looks as follows:
 	float: left;
 	margin: 0 6px 5px 0;
 
-	border: 1px solid #a6a6a6;
-	border-bottom-color: #979797;
+        border: 1px solid #070707;
+        border-bottom-color: #060606;
 
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	border-radius: 3px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
 
-	-moz-box-shadow: 0 1px 0 rgba(255,255,255,.5), 0 0 2px rgba(255,255,255,.15) inset, 0 1px 0 rgba(255,255,255,.15) inset;
-	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,.5), 0 0 2px rgba(255,255,255,.15) inset, 0 1px 0 rgba(255,255,255,.15) inset;
-	box-shadow: 0 1px 0 rgba(255,255,255,.5), 0 0 2px rgba(255,255,255,.15) inset, 0 1px 0 rgba(255,255,255,.15) inset;
+        -moz-box-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 2px rgba(255,255,255,.15) inset, 0 1px 0 rgba(255,255,255,.15) inset;
+        -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 2px rgba(255,255,255,.15) inset, 0 1px 0 rgba(255,255,255,.15) inset;
+        box-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 2px rgba(255,255,255,.15) inset, 0 1px 0 rgba(255,255,255,.15) inset;
 
-	background: #e4e4e4;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#e4e4e4));
-	background-image: -moz-linear-gradient(top, #ffffff, #e4e4e4);
-	background-image: -webkit-linear-gradient(top, #ffffff, #e4e4e4);
-	background-image: -o-linear-gradient(top, #ffffff, #e4e4e4);
-	background-image: -ms-linear-gradient(top, #ffffff, #e4e4e4);
-	background-image: linear-gradient(top, #ffffff, #e4e4e4);
-	filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#ffffff', endColorstr='#e4e4e4');
+        background: #404040;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#595959), to(#404040));
+        background-image: -moz-linear-gradient(top, #595959, #404040);
+        background-image: -webkit-linear-gradient(top, #595959, #404040);
+        background-image: -o-linear-gradient(top, #595959, #404040);
+        background-image: -ms-linear-gradient(top, #595959, #404040);
+        background-image: linear-gradient(top, #595959, #404040);
+        filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#595959', endColorstr='#404040');
 }
 
 /* Different states of the container. */
 .cke_combo_off a.cke_combo_button:hover,
 .cke_combo_off a.cke_combo_button:focus
 {
-	background: #ccc;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#ccc));
-	background-image: -moz-linear-gradient(top, #f2f2f2, #ccc);
-	background-image: -webkit-linear-gradient(top, #f2f2f2, #ccc);
-	background-image: -o-linear-gradient(top, #f2f2f2, #ccc);
-	background-image: -ms-linear-gradient(top, #f2f2f2, #ccc);
-	background-image: linear-gradient(top, #f2f2f2, #ccc);
-	filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#f2f2f2', endColorstr='#cccccc');
+        background: #4c4c4c;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#666), to(#4c4c4c));
+        background-image: -moz-linear-gradient(top, #666, #4c4c4c);
+        background-image: -webkit-linear-gradient(top, #666, #4c4c4c);
+        background-image: -o-linear-gradient(top, #666, #4c4c4c);
+        background-image: -ms-linear-gradient(top, #666, #4c4c4c);
+        background-image: linear-gradient(top, #666, #4c4c4c);
+        filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#666666', endColorstr='#4c4c4c');
 
 	outline: none;
 }
@@ -106,20 +106,20 @@ The visual representation of a rich combo widget looks as follows:
 .cke_combo_off a.cke_combo_button:active,
 .cke_combo_on a.cke_combo_button
 {
-	border: 1px solid #777;
+	/* border: 1px solid #777; */
 
-	-moz-box-shadow: 0 1px 0 rgba(255,255,255,.5), 0 1px 5px rgba(0,0,0,.6) inset;
-	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,.5), 0 1px 5px rgba(0,0,0,.6) inset;
-	box-shadow: 0 1px 0 rgba(255,255,255,.5), 0 1px 5px rgba(0,0,0,.6) inset;
+        -moz-box-shadow: 0 0 8px rgba(0,0,0,.75) inset;
+        -webkit-box-shadow: 0 0 8px rgba(0,0,0,.75) inset;
+        box-shadow: 0 0 8px rgba(0,0,0,.75) inset;
 
-	background: #b5b5b5;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#aaa), to(#cacaca));
-	background-image: -moz-linear-gradient(top, #aaa, #cacaca);
-	background-image: -webkit-linear-gradient(top, #aaa, #cacaca);
-	background-image: -o-linear-gradient(top, #aaa, #cacaca);
-	background-image: -ms-linear-gradient(top, #aaa, #cacaca);
-	background-image: linear-gradient(top, #aaa, #cacaca);
-	filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#aaaaaa', endColorstr='#cacaca');
+        background: #1a1a1a;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#262626), to(#1a1a1a));
+        background-image: -moz-linear-gradient(top, #262626, #1a1a1a);
+        background-image: -webkit-linear-gradient(top, #262626, #1a1a1a);
+        background-image: -o-linear-gradient(top, #262626, #1a1a1a);
+        background-image: -ms-linear-gradient(top, #262626, #1a1a1a);
+        background-image: linear-gradient(top, #262626, #1a1a1a);
+        filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#262626', endColorstr='#1a1a1a');
 }
 
 .cke_combo_on a.cke_combo_button:hover,
@@ -163,9 +163,9 @@ The visual representation of a rich combo widget looks as follows:
 	overflow: hidden;
 	float: left;
 	cursor: default;
-	color: #474747;
-	text-shadow: 0 1px 0 rgba(255,255,255,.5);
-    width: 60px;
+        color: #e5e5e5;
+        text-shadow: 0 1px 0 #000;
+        width: 60px;
 }
 
 .cke_rtl .cke_combo_text
@@ -212,7 +212,7 @@ The visual representation of a rich combo widget looks as follows:
 	font-size: 0;
 	border-left: 3px solid transparent;
 	border-right: 3px solid transparent;
-	border-top: 3px solid #474747;
+        border-top: 3px solid #e6e6e6;
 }
 
 .cke_hc .cke_combo_arrow

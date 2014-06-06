@@ -65,25 +65,25 @@ Special outer level classes used in this file:
 {
 	float: left;
 	margin: 0 6px 5px 0;
-	border: 1px solid #a6a6a6;
-	border-bottom-color: #979797;
+        border: 1px solid #070707;
+        border-bottom-color: #060606;
 
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
 
-	-moz-box-shadow: 0 1px 0 rgba(255,255,255,.5), 0 0 2px rgba(255,255,255,.15) inset, 0 1px 0 rgba(255,255,255,.15) inset;
-	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,.5), 0 0 2px rgba(255,255,255,.15) inset, 0 1px 0 rgba(255,255,255,.15) inset;
-	box-shadow: 0 1px 0 rgba(255,255,255,.5), 0 0 2px rgba(255,255,255,.15) inset, 0 1px 0 rgba(255,255,255,.15) inset;
+        -moz-box-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 2px rgba(255,255,255,.15) inset, 0 1px 0 rgba(255,255,255,.15) inset;
+        -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 2px rgba(255,255,255,.15) inset, 0 1px 0 rgba(255,255,255,.15) inset;
+        box-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 2px rgba(255,255,255,.15) inset, 0 1px 0 rgba(255,255,255,.15) inset;
 
-	background: #e4e4e4;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#e4e4e4));
-	background-image: -moz-linear-gradient(top, #ffffff, #e4e4e4);
-	background-image: -webkit-linear-gradient(top, #ffffff, #e4e4e4);
-	background-image: -o-linear-gradient(top, #ffffff, #e4e4e4);
-	background-image: -ms-linear-gradient(top, #ffffff, #e4e4e4);
-	background-image: linear-gradient(top, #ffffff, #e4e4e4);
-	filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#ffffff', endColorstr='#e4e4e4');
+        background: #404040;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#595959), to(#404040));
+        background-image: -moz-linear-gradient(top, #595959, #404040);
+        background-image: -webkit-linear-gradient(top, #595959, #404040);
+        background-image: -o-linear-gradient(top, #595959, #404040);
+        background-image: -ms-linear-gradient(top, #595959, #404040);
+        background-image: linear-gradient(top, #595959, #404040);
+        filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#595959', endColorstr='#404040');
 }
 
 .cke_hc .cke_toolgroup
@@ -149,18 +149,18 @@ a.cke_button
    i.e. currently writing in bold or when spell checking is enabled. */
 .cke_button_on
 {
-	-moz-box-shadow: 0 1px 5px rgba(0,0,0,.6) inset, 0 1px 0 rgba(0,0,0,.2);
-	-webkit-box-shadow: 0 1px 5px rgba(0,0,0,.6) inset, 0 1px 0 rgba(0,0,0,.2);
-	box-shadow: 0 1px 5px rgba(0,0,0,.6) inset, 0 1px 0 rgba(0,0,0,.2);
+        -moz-box-shadow: 0 0 8px rgba(0,0,0,.75) inset;
+        -webkit-box-shadow: 0 0 8px rgba(0,0,0,.75) inset;
+        box-shadow: 0 0 8px rgba(0,0,0,.75) inset;
 
-	background: #b5b5b5;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#aaa), to(#cacaca));
-	background-image: -moz-linear-gradient(top, #aaa, #cacaca);
-	background-image: -webkit-linear-gradient(top, #aaa, #cacaca);
-	background-image: -o-linear-gradient(top, #aaa, #cacaca);
-	background-image: -ms-linear-gradient(top, #aaa, #cacaca);
-	background-image: linear-gradient(top, #aaa, #cacaca);
-	filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#aaaaaa', endColorstr='#cacaca');
+        background: #4c4c4c;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#262626), to(#1a1a1a));
+        background-image: -moz-linear-gradient(top, #262626, #1a1a1a);
+        background-image: -webkit-linear-gradient(top, #262626, #1a1a1a);
+        background-image: -o-linear-gradient(top, #262626, #1a1a1a);
+        background-image: -ms-linear-gradient(top, #262626, #1a1a1a);
+        background-image: linear-gradient(top, #262626, #1a1a1a);
+        filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#262626', endColorstr='#1a1a1a');
 }
 
 .cke_hc .cke_button_on,
@@ -207,18 +207,18 @@ a.cke_button_disabled:hover,
 a.cke_button_disabled:focus,
 a.cke_button_disabled:active
 {
-	-moz-box-shadow: 0 0 1px rgba(0,0,0,.3) inset;
-	-webkit-box-shadow: 0 0 1px rgba(0,0,0,.3) inset;
-	box-shadow: 0 0 1px rgba(0,0,0,.3) inset;
+        -moz-box-shadow: 0 0 2px rgba(255,255,255,.15) inset, 0 1px 0 rgba(255,255,255,.15) inset;
+        -webkit-box-shadow: 0 0 2px rgba(255,255,255,.15) inset, 0 1px 0 rgba(255,255,255,.15) inset;
+        box-shadow: 0 0 2px rgba(255,255,255,.15) inset, 0 1px 0 rgba(255,255,255,.15) inset;
 
-	background: #ccc;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#ccc));
-	background-image: -moz-linear-gradient(top, #f2f2f2, #ccc);
-	background-image: -webkit-linear-gradient(top, #f2f2f2, #ccc);
-	background-image: -o-linear-gradient(top, #f2f2f2, #ccc);
-	background-image: -ms-linear-gradient(top, #f2f2f2, #ccc);
-	background-image: linear-gradient(top, #f2f2f2, #ccc);
-	filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#f2f2f2', endColorstr='#cccccc');
+        background: #4c4c4c;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#666), to(#4c4c4c));
+        background-image: -moz-linear-gradient(top, #666, #4c4c4c);
+        background-image: -webkit-linear-gradient(top, #666, #4c4c4c);
+        background-image: -o-linear-gradient(top, #666, #4c4c4c);
+        background-image: -ms-linear-gradient(top, #666, #4c4c4c);
+        background-image: linear-gradient(top, #666, #4c4c4c);
+        filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#666666', endColorstr='#4c4c4c');
 }
 
 /* The icon which is a visual representation of the button. */
@@ -254,8 +254,8 @@ a.cke_button_disabled:active
 	vertical-align: middle;
 	float: left;
 	cursor: default;
-	color: #474747;
-	text-shadow: 0 1px 0 rgba(255,255,255,.5);
+        color: #e5e5e5;
+        text-shadow: 0 1px 0 #000;
 }
 
 .cke_rtl .cke_button_label
@@ -285,7 +285,7 @@ a.cke_button_disabled:active
 	vertical-align: top;
 	border-left: 3px solid transparent;
 	border-right: 3px solid transparent;
-	border-top: 3px solid #474747;
+	border-top: 3px solid #e6e6e6;
 }
 
 .cke_rtl .cke_button_arrow
@@ -307,24 +307,25 @@ a.cke_button_disabled:active
 .cke_toolbar_separator
 {
 	float: left;
-	background-color: #c0c0c0;
-	background-color: rgba(0,0,0,.2);
+        background-color: #272727;
+        background-color: rgba(0,0,0,.5);
+
 	margin: 5px 2px 0;
 	height: 18px;
 	width: 1px;
 
-	-webkit-box-shadow: 1px 0 1px rgba(255,255,255,.5);
-	-moz-box-shadow: 1px 0 1px rgba(255,255,255,.5);
-	box-shadow: 1px 0 1px rgba(255,255,255,.5);
+        -webkit-box-shadow: 1px 0 0 rgba(255,255,255,.1);
+        -moz-box-shadow: 1px 0 0 rgba(255,255,255,.1);
+        box-shadow: 1px 0 0 rgba(255,255,255,.1);
 }
 
 .cke_rtl .cke_toolbar_separator
 {
 	float: right;
 
-	-webkit-box-shadow: -1px 0 1px rgba(255,255,255,.1);
-	-moz-box-shadow: -1px 0 1px rgba(255,255,255,.1);
-	box-shadow: -1px 0 1px rgba(255,255,255,.1);
+	-webkit-box-shadow: -1px 0 0 rgba(255,255,255,.1);
+	-moz-box-shadow: -1px 0 0 rgba(255,255,255,.1);
+	box-shadow: -1px 0 0 rgba(255,255,255,.1);
 }
 
 .cke_hc .cke_toolbar_separator
@@ -358,37 +359,25 @@ a.cke_button_disabled:active
 	cursor: default;
 	text-align: center;
 
-	border: 1px solid #a6a6a6;
-	border-bottom-color: #979797;
+        border: 1px solid #070707;
+        border-bottom-color: #060606;
 
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
 
-	-moz-box-shadow: 0 1px 0 rgba(255,255,255,.5), 0 0 2px rgba(255,255,255,.15) inset, 0 1px 0 rgba(255,255,255,.15) inset;
-	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,.5), 0 0 2px rgba(255,255,255,.15) inset, 0 1px 0 rgba(255,255,255,.15) inset;
-	box-shadow: 0 1px 0 rgba(255,255,255,.5), 0 0 2px rgba(255,255,255,.15) inset, 0 1px 0 rgba(255,255,255,.15) inset;
+        -moz-box-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 2px rgba(255,255,255,.15) inset, 0 1px 0 rgba(255,255,255,.15) inset;
+        -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 2px rgba(255,255,255,.15) inset, 0 1px 0 rgba(255,255,255,.15) inset;
+        box-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 2px rgba(255,255,255,.15) inset, 0 1px 0 rgba(255,255,255,.15) inset;
 
-	background: #e4e4e4;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#e4e4e4));
-	background-image: -moz-linear-gradient(top, #ffffff, #e4e4e4);
-	background-image: -webkit-linear-gradient(top, #ffffff, #e4e4e4);
-	background-image: -o-linear-gradient(top, #ffffff, #e4e4e4);
-	background-image: -ms-linear-gradient(top, #ffffff, #e4e4e4);
-	background-image: linear-gradient(top, #ffffff, #e4e4e4);
-	filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#ffffff', endColorstr='#e4e4e4');
-}
-
-.cke_toolbox_collapser:hover
-{
-	background: #ccc;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#ccc));
-	background-image: -moz-linear-gradient(top, #f2f2f2, #ccc);
-	background-image: -webkit-linear-gradient(top, #f2f2f2, #ccc);
-	background-image: -o-linear-gradient(top, #f2f2f2, #ccc);
-	background-image: -ms-linear-gradient(top, #f2f2f2, #ccc);
-	background-image: linear-gradient(top, #f2f2f2, #ccc);
-	filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#f2f2f2', endColorstr='#cccccc');
+        background: #404040;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#595959), to(#404040));
+        background-image: -moz-linear-gradient(top, #595959, #404040);
+        background-image: -webkit-linear-gradient(top, #595959, #404040);
+        background-image: -o-linear-gradient(top, #595959, #404040);
+        background-image: -ms-linear-gradient(top, #595959, #404040);
+        background-image: linear-gradient(top, #595959, #404040);
+        filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#595959', endColorstr='#404040');
 }
 
 .cke_toolbox_collapser.cke_toolbox_collapser_min
@@ -413,7 +402,7 @@ a.cke_button_disabled:active
 	margin-top: 1px;
 	border-left: 3px solid transparent;
 	border-right: 3px solid transparent;
-	border-bottom: 3px solid #474747;
+	border-bottom: 3px solid #e5e5e5;
 	border-top: 3px solid transparent;
 }
 
@@ -421,7 +410,7 @@ a.cke_button_disabled:active
 {
 	margin-top: 4px;
 	border-bottom-color: transparent;
-	border-top-color: #474747;
+	border-top-color: #e5e5e5;
 }
 
 .cke_hc .cke_toolbox_collapser .cke_arrow
