@@ -13,7 +13,8 @@ var path = require( 'path' ),
 	png = require( 'png-js' ),
 	tmp = require( 'tmp' ),
 	q = require( 'q' ),
-	convertTpl = 'convert %s -crop %sx%s+%s+%s +repage -sharpen 0x1.0 png32:%s',
+	// convertTpl = 'convert %s -crop %sx%s+%s+%s +repage -sharpen 0x1.0 png32:%s',
+	convertTpl = 'convert %s -crop %sx%s+%s+%s +repage png32:%s',
 
 	DEFAULT_SIZE = 16;
 
