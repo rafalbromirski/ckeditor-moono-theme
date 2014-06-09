@@ -9,7 +9,7 @@ Source files are stored in a different branch: **source**.
 2. Set the new skin name inside your `config.js`:
 
 ```js
-CKEDITOR.skinName = 'moono-dark';
+config.skin = 'moono-dark';
 ```
 
 ###Preview
