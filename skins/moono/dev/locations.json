@@ -129,7 +129,8 @@
 		"plugins/uicolor/icons/uicolor.png",
 		"plugins/placeholder/icons/placeholder.png",
 		"plugins/language/icons/language.png",
-		"plugins/codesnippet/icons/codesnippet.png"
+		"plugins/codesnippet/icons/codesnippet.png",
+		"plugins/mathjax/icons/mathjax.png"
 	],
 	"11": [
 		"plugins/link/images/anchor.png",
