@@ -4,7 +4,7 @@ This theme is a dark version of Moono Theme which originally was designed and de
 
 This repository includes new UI color, icons (+hidpi) and CSS files.
 
-If you want to adjust moono theme, you have to switch to **source** branch.
+If you want to adjust moono theme, you have to switch to the `source` branch.
 
 ###How to install
 1. Clone / Download this repository and copy `moono-dark` into `ckeditor/skins`
@@ -13,7 +13,8 @@ If you want to adjust moono theme, you have to switch to **source** branch.
 ```js
 config.skin = 'moono-dark';
 ```
-3. Enjoy the beauty of dark UI.
+
+Enjoy the beauty of dark UI.
 
 ###Preview
 ![CKEditor Moono Dark Theme](http://demos.paranoida.com/ckeditor-moono/moono-dark.png)
