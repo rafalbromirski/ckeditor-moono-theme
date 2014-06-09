@@ -2,7 +2,15 @@
 
 This theme is a dark version of Moono Theme which was designed and developed as a <a href="http://ckeditor.com/blog/ckeditor-4-skin-contest">CKEditor skin contest</a> entry.
 
-Source files are stored in a different branch: **source**
+Source files are stored in a different branch: **source**.
+
+###How to install
+1. Clone / Download this repository and copy `moono-dark` into `ckeditor/skins`
+2. Set the new skin name inside your `config.js`:
+
+```js
+CKEDITOR.skinName = 'moono-dark';
+```
 
 ###Preview
 ![CKEditor Moono Dark Theme](http://demos.paranoida.com/ckeditor-moono/moono-dark.png)
