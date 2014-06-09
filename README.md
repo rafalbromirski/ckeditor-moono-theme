@@ -1,16 +1,24 @@
 #CKEditor Moono Theme
 
-Moono is a theme for CKEditor 4 that comes in two versions - dark or light.
-It was designed and developed as a <a href="http://ckeditor.com/blog/ckeditor-4-skin-contest">CKEditor skin contest</a> entry.
+This theme is a dark version of Moono Theme which was designed and developed as a <a href="http://ckeditor.com/blog/ckeditor-4-skin-contest">CKEditor skin contest</a> entry.
 
-###Browsers support
-Chrome, Safari (including Mobile version - iPhone & iPad), Firefox, Opera, IE7+
+Source files are stored in a different branch: **source**
+
+###Preview
+![CKEditor Moono Dark Theme](http://demos.paranoida.com/ckeditor-moono/moono-dark.png)
 
 ###Credits
 You can check my <a href="http://paranoida.com">portfolio</a> or follow me on <a href="https://twitter.com/paranoida">twitter</a>.
 
-###Preview (dark)
-![CKEditor Moono Dark Theme](http://demos.paranoida.com/ckeditor-moono/moono-dark.png)
+---
+### License:
 
-###Preview (light)
-![CKEditor Moono Light Theme](http://demos.paranoida.com/ckeditor-moono/moono-light.png)
+The MIT license
+
+Copyright &copy; 2013 [Rafal Bromirski](http://paranoida.com)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
