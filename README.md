@@ -16,11 +16,13 @@ config.skin = 'moono-dark';
 
 Enjoy the beauty of dark UI.
 
+###Credits
+You can check my <a href="http://paranoida.com">website</a> or follow me on <a href="https://twitter.com/paranoida">twitter</a>.
+
+I would like to thank **Craig McLeod** (<a href="http://build2trade.com">Build.</a>) for his support and keeping this project going.
+
 ###Preview
 ![CKEditor Moono Dark Theme](http://demos.paranoida.com/ckeditor-moono/moono-dark.png)
-
-###Credits
-You can check my <a href="http://paranoida.com">portfolio</a> or follow me on <a href="https://twitter.com/paranoida">twitter</a>.
 
 ---
 ### License:
